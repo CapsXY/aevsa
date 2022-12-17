@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="antialiased scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CFC - Vila Santo Antônio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/22163b9457.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="css/carousel.css">
+  </head>
+  <!-- sm = 640px / md = 768px / lg = 1024px / xl = 1280px / 2xl = 1536px -->
+  <body class="bg-[#252525] font-[inter]">
+    <main>
+      <!-- HEADER -->
+      <header id="inicio" class="bg-[#dead00] text-[#252525] flex justify-between items-center p-2.5">
+        <img class="w-20 || lg:w-24" src="svg/logo.svg" />
+        <div class="flex flex-col items-center uppercase font-bold">
+          <h2 class="text-sm drop-shadow-2xl || lg:text-base">Centro de Formação de Condutores</h2>
+          <h1 class="text-3xl drop-shadow-2xl || lg:text-4xl">Vila Santo Antônio</h1>
+        </div>
+        <div id="nav" class="fixed right-0 top-0 w-0 h-full overflow-x-hidden transition-all duration-[0.5s] z-10 bg-[#000000be]">
+          <button class="close-nav || absolute top-px right-[0.625em] text-[3.125em] text-[#dead00] ">&times;</button>
+          <div class="relative top-1/4 w-full mt-[1.875em]">
+            <a class="block p-5 text-xl font-semibold text-[#dead00] text-end uppercase transition-all duration-[0.3s] focus:hover:text-white" href="#inicio">Início</a>
+            <a class="block p-5 text-xl font-semibold text-[#dead00] text-end uppercase transition-all duration-[0.3s] focus:hover:text-white" href="#programa">Programa</a>
+            <a class="block p-5 text-xl font-semibold text-[#dead00] text-end uppercase transition-all duration-[0.3s] focus:hover:text-white" href="#quemsomos">Quem Somos</a>
+            <a class="block p-5 text-xl font-semibold text-[#dead00] text-end uppercase transition-all duration-[0.3s] focus:hover:text-white" href="#contato">Contato</a>
+          </div>
+        </div>
+        <button class="open-nav || lg:hidden">
+          <i><img class="w-10" src="svg/bars-solid.svg"></i>
+        </button>
+        <div class="sm:hidden || lg:flex lg:flex-col lg:items-center lg:font-bold">
+          <div class="flex gap-2 text-lg">
+            <img class="w-5" src="svg/whatsapp.svg" />
+            <span>21 97151-5281</span>
+            <span>|</span>
+            <img class="w-5" src="svg/phone-solid.svg" />
+            <span>21 2772-4214</span>
+          </div>
+          <span class="text-xs">Av. Duque de Caxias, 420 - Parque Paulicéia, Duque de Caxias</span>
+        </div>
+      </header>
+
+      <!-- MENU DESKTOP -->
+      <nav class="sm:hidden || lg:bg-[#252525] lg:text-[#dead00] lg:flex lg:items-center lg:justify-end lg:gap-2 lg:p-2.5 lg:uppercase lg:font-bold">
+        <a href="#inicio">Início</a>
+        <span>|</span>
+        <a href="#programa">Programa</a>
+        <span>|</span>
+        <a href="#quemsomos">Quem Somos</a>
+        <span>|</span>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- CAROUSEL -->
+      <section id="carousel" class="relative">
+				<div class="carousel-inner">
+					<div class="slide || ">
+						<img class="w-full h-full object-contain" src="https://images.unsplash.com/photo-1478442231640-a78bbd3bcd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" />
+					</div>
+
+					<div class="slide || ">
+						<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1553782097-130fef5d3e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"	/>
+					</div>
+
+					<div class="slide || ">
+						<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"	/>
+					</div>
+
+					<div class="slide || ">
+						<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1578041262130-633307b3bfd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"	/>
+					</div>
+				</div>
+
+				<a class="absolute top-2/4 w-auto mt-[-1.375em] p-[1em] rounded-[0.188em] text-[1.875em] font-bold text-[#222428] cursor-pointer transition-all duration-[0.6s] left-0 hover:text-[#dead00] hover:bg-[#252525]" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="absolute top-2/4 w-auto mt-[-1.375em] p-[1em] rounded-[0.188em] text-[1.875em] font-bold text-[#222428] cursor-pointer transition-all duration-[0.6s] right-0 hover:text-[#dead00] hover:bg-[#252525]" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="flex justify-center absolute right-0 left-0 bottom-[1%]">
+					<span class="dot || h-[5px] w-[30px] my-0 mx-[2px] rounded-[2px] bg-[#b7b7b7] cursor-pointer transition-[0.6s]" onclick="currentSlide(1)"></span>
+					<span class="dot || h-[5px] w-[30px] my-0 mx-[2px] rounded-[2px] bg-[#b7b7b7] cursor-pointer transition-[0.6s]" onclick="currentSlide(2)"></span>
+					<span class="dot || h-[5px] w-[30px] my-0 mx-[2px] rounded-[2px] bg-[#b7b7b7] cursor-pointer transition-[0.6s]" onclick="currentSlide(3)"></span>
+					<span class="dot || h-[5px] w-[30px] my-0 mx-[2px] rounded-[2px] bg-[#b7b7b7] cursor-pointer transition-[0.6s]" onclick="currentSlide(4)"></span>
+				</div>
+			</section>
+
+      <!-- INFO -->
+      <section id="info" class="bg-[#646262] flex gap-2 justify-around p-2.5">
+        <div class="flex items-center w-fit">
+          <img class="w-10 drop-shadow-2xl" src="svg/teacher.svg" />
+          <div class="flex flex-col uppercase font-bold text-white">
+            <p class="text-xl drop-shadow-2xl || lg:text-2xl">10</p>
+            <p class="text-xs drop-shadow-2xl || lg:text-sm">Professores</p>
+          </div>
+        </div>
+        <div class="flex items-center w-fit">
+          <img class="w-10 drop-shadow-2xl" src="svg/clock.svg" />
+          <div class="flex flex-col uppercase font-bold text-white">
+            <p class="text-xl drop-shadow-2xl || lg:text-2xl">36</p>
+            <p class="text-xs drop-shadow-2xl || lg:text-sm">Horas de Treino</p>
+          </div>
+        </div>
+        <div class="flex items-center w-fit">
+          <img class="w-10 drop-shadow-2xl" src="svg/car.svg" />
+          <div class="flex flex-col uppercase font-bold text-white">
+            <p class="text-xl drop-shadow-2xl || lg:text-2xl">+50</p>
+            <p class="text-xs drop-shadow-2xl || lg:text-sm">Anos de Trabalho</p>
+          </div>
+        </div>
+        <div class="flex items-center w-fit">
+          <img class="w-10 drop-shadow-2xl" src="svg/id.svg" />
+          <div class="flex flex-col uppercase font-bold text-white">
+            <p class="text-xl drop-shadow-2xl || lg:text-2xl">+10.000</p>
+            <p class="text-xs drop-shadow-2xl || lg:text-sm">Aprovados</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRAMA -->
+      <section id="programa" class="bg-[#f2f2f2] flex flex-col uppercase font-bold p-2.5 gap-3 justify-around">
+        <h2 class="drop-shadow-2xl text-2xl m-2.5 ||  xl:text-3xl">P r o g r a m a</h2>
+        <div class="flex gap-2 justify-center items-center || lg:flex-col || xl:gap-5">
+          <div class="flex flex-col gap-2 || lg:flex-row || xl:gap-5">
+            <div class="flex flex-col items-center bg-[#d9d9d9] gap-3 p-3 rounded w-60 h-36 justify-around || lg:w-80 lg:h-48">
+              <div class="flex flex-col items-center">
+                <span class="text-xl text-center">Direção Defensiva</span>
+                <span class="text-base">16 Aulas</span>
+              </div>
+              <img class="w-20" src="svg/direcao-defensiva.svg" />
+            </div>
+            <div class="flex flex-col items-center bg-[#f2f2f2] gap-3 p-3 rounded w-60 h-36 justify-around border-solid border-4 || lg:w-80 lg:h-48">
+              <div class="flex flex-col items-center">
+                <span class="text-xl text-center">Legislação</span>
+                <span class="text-base">18 Aulas</span>
+              </div>
+              <img class="w-20" src="svg/50.svg" />
+            </div>
+            <div class="flex flex-col items-center bg-[#d9d9d9] gap-3 p-3 rounded w-60 h-36 justify-around || lg:w-80 lg:h-48">
+              <div class="flex flex-col items-center">
+                <span class="text-xl text-center">Meio Ambiente e Cidadania</span>
+                <span class="text-base">04 Aulas</span>
+              </div>
+              <img class="w-20" src="svg/meeting.svg" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 || lg:flex-row || xl:gap-5">
+            <div class="flex flex-col items-center bg-[#f2f2f2] gap-3 p-3 rounded w-60 h-36 justify-around border-solid border-4 || lg:w-80 lg:h-48">
+              <div class="flex flex-col items-center">
+                <span class="text-xl text-center">Primeiros Socorros</span>
+                <span class="text-base">04 Aulas</span>
+              </div>
+              <img class="w-20" src="svg/ambulance.svg" />
+            </div>
+            <div class="flex flex-col items-center bg-[#d9d9d9] gap-3 p-3 rounded w-60 h-36 justify-around || lg:w-80 lg:h-48">
+              <div class="flex flex-col items-center">
+                <span class="text-xl text-center">Mecânica</span>
+                <span class="text-base">03 Aulas</span>
+              </div>
+              <img class="w-20" src="svg/car-service.svg" />
+            </div>
+            <div class="flex flex-col items-center bg-[#f2f2f2] gap-3 p-3 rounded w-60 h-36 justify-around border-solid border-4 || lg:w-80 lg:h-48">
+              <div class="flex flex-col items-center">
+                <span class="text-xl text-center">Prática de Direção</span>
+                <span class="text-base">20 Aulas</span>
+              </div>
+              <img class="w-20" src="svg/driving.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUEM SOMOS -->
+      <section id="quemsomos" class="bg-[#ffffff] flex flex-col justify-around p-2.5 pb-5 gap-3 justify-around">
+        <h2 class="drop-shadow-2xl text-2xl m-2.5 mr-0 uppercase font-bold || xl:text-3xl">Q u e m<br>S o m o s</h2>
+        <div class="flex flex-col gap-2 || lg:flex-row lg:w-full">
+          <div class="flex flex-col gap-5 || lg:w-7/12">
+            <div class="flex justify-center">
+              <span class="text-justify font-semibold drop-shadow-2xl px-2.5 || xl:text-xl">
+                O Centro de Formação de Condutores Vila Santo Antônio fica localizado
+                na Avenida Duque de Caxias há mais de 50 anos, formando excelentes
+                condutores de todas as categorias. Entendemos que aprender a dirigir
+                não é barato, muitas autoescolas aproveitam isso e cobram uma quantia
+                maior do que o necessário, não nós.
+              </span>
+            </div>
+            <div class="flex flex-col gap-2 items-center || lg:flex-row lg:justify-evenly">
+              <div class="flex flex-col justify-center items-center text-center gap-2 bg-[#f0f0f0] rounded-md px-2 w-60 h-48 drop-shadow-2xl || lg:w-80 lg:h-64 || xl:h-60">
+                <img class="w-20" src="svg/training.svg">
+                <span class="uppercase font-bold text-sm || lg:text-base" >Instrutores Experiêntes</span>
+                <p class="font-semibold text-xs || lg:text-sm">Todos os nossos instrutores são licenciados pelo DMV, 
+                  mentalmente e fisicamente aptos e têm uma década ou mais de histórico de instrução.</p>
+              </div>
+              <div class="flex flex-col justify-center items-center text-center gap-2 bg-[#dead00] rounded-md px-2 w-60 h-48 drop-shadow-2xl || lg:w-80 lg:h-64 || xl:h-60">
+                <img class="w-20" src="svg/card.svg">
+                <span class="uppercase font-bold text-sm || lg:text-base" >Planos de Pagamentos</span>
+                <p class="font-semibold text-xs || lg:text-sm">Nós permitimos que você decida quando e como deseja pagar. 
+                  Aceitamos todas as principais formas de pagamentos.</p>
+              </div>
+              <div class="flex flex-col justify-center items-center text-center gap-2 bg-[#f0f0f0] rounded-md px-2 w-60 h-48 drop-shadow-2xl || lg:w-80 lg:h-64 || xl:h-60">
+                <img class="w-20" src="svg/shield.svg">
+                <span class="uppercase font-bold text-sm || lg:text-base" >Melhores Medidas de Segurança</span>
+                <p class="font-semibold text-xs || lg:text-sm">Nossos instrutores são altamente treinados nas mais 
+                  recentes técnicas e regras de segurança da estrada.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center || lg:w-5/12">
+            <img class="w-80 || lg:w-96 || 2xl:w-[400px]" src="svg/profile.svg">
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="bg-[#dead00] text-[#252525] flex flex-col p-2.5 font-bold drop-shadow-2xl || lg:flex-row lg:items-center lg:justify-evenly lg:w-full">
+        <div class="flex justify-evenly gap-2 || lg:w-7/12">
+          <img class="w-36 || lg:w-20 || xl:w-28" src="svg/logo.svg">
+          <div class="flex flex-col || lg:flex-row lg:items-center lg:gap-5">
+            <div class="text-lg || xl:text-2xl">
+              <span class="flex gap-1">Dúvidas? <img class="w-7" src="svg/support.svg"></span>
+              <span>Fale Conosco!</span>
+            </div>
+            <div class="flex flex-col gap-1 text-base || xl:text-xl">
+              <span class="flex gap-1"><img class="w-5" src="svg/whatsapp.svg">21 97151-5281</span>
+              <span class="flex gap-1"><img class="w-4" src="svg/phone-solid.svg">21 2772-4214</span>
+              <span class="flex gap-1"><img class="w-4" src="svg/email.svg">autoescolavsa@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <span class="text-base text-center || lg:w-5/12 || xl:text-xl">Atendimento: (De segunda à sexta-feira das 08h00 às 19h00 <br> sábados das 08h00 às 17h00)</span>
+      </section>
+
+      <!-- FOOTER -->
+      <section id="footer" class="bg-[#252525] text-center text-white font-extralight text-xs p-1 || xl:text-sm">
+        <span>© 2022 Autoescola Vila Santo Antônio. Todos os direitos reservados.</span>
+      </section>
+
+      <!-- FLOAT BUTTON -->
+      <div id="float-button">
+        <a href="#inicio" class="sm:hidden || lg:block fixed w-16 h-16 bottom-28 right-5 rounded-full z-10 drop-shadow-2xl text-center text-[2.625em] text-[#252525] bg-[#dead00] z-10 || xl:bottom-32">
+          <i class="fa-solid fa-arrow-up mt-2"></i>
+        </a>
+        <a class="fixed w-12 h-12 bottom-5 right-5 rounded-full z-10 drop-shadow-2xl text-center text-[2em] text-white bg-[#25d366] || lg:w-16 lg:h-16 lg:text-[2.625em]" href="https://api.whatsapp.com/send?phone=5521971515281&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es!">
+          <i class="fa-brands fa-whatsapp || lg:mt-2"></i>
+        </a>
+      </div>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <script src="js/nav.js"></script>
+		<script src="js/carousel.js"></script>
+  </body>
+</html>

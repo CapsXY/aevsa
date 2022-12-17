@@ -1,0 +1,5 @@
+.activeDot,
+.dot:hover {
+  flex: none;
+  background: #dead00;
+}
