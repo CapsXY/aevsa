@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
     <link rel="stylesheet" href="css/carousel.css">
   </head>
-  <!-- sm = 640px / md = 768px / lg = 1024px / xl = 1280px / 2xl = 1536px -->
+  <!--other = 320px  sm = 640px / md = 768px / lg = 1024px / xl = 1280px / 2xl = 1536px -->
   <body class="bg-[#252525] font-[inter]">
     <main>
       <!-- HEADER -->
       <header id="inicio" class="bg-[#dead00] text-[#252525] flex justify-between items-center p-2.5">
-        <img class="w-20 || lg:w-24" src="svg/logo.svg" />
-        <div class="flex flex-col items-center uppercase font-bold">
-          <h2 class="text-sm drop-shadow-2xl || lg:text-base">Centro de Formação de Condutores</h2>
-          <h1 class="text-3xl drop-shadow-2xl || lg:text-4xl">Vila Santo Antônio</h1>
+        <img class="w-14 || sm:w-20 || lg:w-24" src="svg/logo.svg" />
+        <div class="flex flex-col items-center text-center uppercase font-bold">
+          <h2 class="text-xs drop-shadow-2xl || sm:text-sm || lg:text-base">Centro de Formação de Condutores</h2>
+          <h1 class="text-base drop-shadow-2xl || sm:text-3xl || lg:text-4xl">Vila Santo Antônio</h1>
         </div>
         <div id="nav" class="fixed right-0 top-0 w-0 h-full overflow-x-hidden transition-all duration-[0.5s] z-10 bg-[#000000be]">
           <button class="close-nav || absolute top-px right-[0.625em] text-[3.125em] text-[#dead00] ">&times;</button>
@@ -32,9 +32,9 @@
           </div>
         </div>
         <button class="open-nav || lg:hidden">
-          <i><img class="w-10" src="svg/bars-solid.svg"></i>
+          <i><img class="w-8 || sm:w-10" src="svg/bars-solid.svg"></i>
         </button>
-        <div class="sm:hidden || lg:flex lg:flex-col lg:items-center lg:font-bold">
+        <div class="hidden || lg:flex lg:flex-col lg:items-center lg:font-bold">
           <div class="flex gap-2 text-lg">
             <img class="w-5" src="svg/whatsapp.svg" />
             <span>21 97151-5281</span>
@@ -47,7 +47,7 @@
       </header>
 
       <!-- MENU DESKTOP -->
-      <nav class="sm:hidden || lg:bg-[#252525] lg:text-[#dead00] lg:flex lg:items-center lg:justify-end lg:gap-2 lg:p-2.5 lg:uppercase lg:font-bold">
+      <nav class="hidden || lg:bg-[#252525] lg:text-[#dead00] lg:flex lg:items-center lg:justify-end lg:gap-2 lg:p-2.5 lg:uppercase lg:font-bold">
         <a href="#inicio">Início</a>
         <span>|</span>
         <a href="#programa">Programa</a>
@@ -60,26 +60,22 @@
       <!-- CAROUSEL -->
       <section id="carousel" class="relative">
 				<div class="carousel-inner">
-					<div class="slide || ">
-						<img class="w-full h-[437px] object-cover" src="https://images.unsplash.com/photo-1478442231640-a78bbd3bcd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" />
+          <!-- w-1280px / h-437px -->
+					<div class="slide">
+						<img class="w-full object-fit" src="img/image.png" />
 					</div>
-
-					<div class="slide || ">
-						<img class="w-full h-[437px] object-cover" src="https://images.unsplash.com/photo-1553782097-130fef5d3e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"	/>
+					<div class="slide">
+						<img class="w-full object-fit" src="img/image2.png"	/>
 					</div>
-
-					<div class="slide || ">
-						<img class="w-full h-[437px] object-cover" src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"	/>
+					<div class="slide">
+						<img class="w-full object-fit" src="img/image3.png"	/>
 					</div>
-
-					<div class="slide || ">
-						<img class="w-full h-[437px] object-cover" src="https://images.unsplash.com/photo-1578041262130-633307b3bfd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"	/>
+					<div class="slide">
+						<img class="w-full object-fit" src="img/image4.png"	/>
 					</div>
 				</div>
-
-				<a class="absolute top-2/4 w-auto mt-[-1.375em] p-[1em] rounded-[0.188em] text-[1.875em] font-bold text-[#222428] cursor-pointer transition-all duration-[0.6s] left-0 hover:text-[#dead00] hover:bg-[#252525]" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="absolute top-2/4 w-auto mt-[-1.375em] p-[1em] rounded-[0.188em] text-[1.875em] font-bold text-[#222428] cursor-pointer transition-all duration-[0.6s] right-0 hover:text-[#dead00] hover:bg-[#252525]" onclick="plusSlides(1)">&#10095;</a>
-
+				<a class="absolute top-2/4 w-auto mt-[-1.375em] p-[1em] rounded-[0.188em] text-[0.625em] font-bold text-[#222428] cursor-pointer transition-all duration-[0.6s] left-0 hover:text-[#dead00] hover:bg-[#252525] || sm:text-[1.875em]" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="absolute top-2/4 w-auto mt-[-1.375em] p-[1em] rounded-[0.188em] text-[0.625em] font-bold text-[#222428] cursor-pointer transition-all duration-[0.6s] right-0 hover:text-[#dead00] hover:bg-[#252525] || sm:text-[1.875em]" onclick="plusSlides(1)">&#10095;</a>
 				<div class="flex justify-center absolute right-0 left-0 bottom-[1%]">
 					<span class="dot || h-[5px] w-[30px] my-0 mx-[2px] rounded-[2px] bg-[#b7b7b7] cursor-pointer transition-[0.6s]" onclick="currentSlide(1)"></span>
 					<span class="dot || h-[5px] w-[30px] my-0 mx-[2px] rounded-[2px] bg-[#b7b7b7] cursor-pointer transition-[0.6s]" onclick="currentSlide(2)"></span>
@@ -89,41 +85,41 @@
 			</section>
 
       <!-- INFO -->
-      <section id="info" class="bg-[#646262] flex gap-2 justify-around p-2.5">
+      <section id="info" class="bg-[#646262] flex flex-wrap justify-evenly sm:justify-evenly gap-2 p-2.5">
         <div class="flex items-center w-fit">
-          <img class="w-10 drop-shadow-2xl" src="svg/teacher.svg" />
+          <img class="w-6 drop-shadow-2xl || sm:w-10" src="svg/teacher.svg" />
           <div class="flex flex-col uppercase font-bold text-white">
-            <p class="text-xl drop-shadow-2xl || lg:text-2xl">10</p>
-            <p class="text-xs drop-shadow-2xl || lg:text-sm">Professores</p>
+            <p class="text-lg drop-shadow-2xl || sm:text-xl || lg:text-2xl">10</p>
+            <p class="text-xs drop-shadow-2xl || sm:text-xs || lg:text-sm">Professores</p>
+          </div>
+        </div>
+        <div class="flex items-center w-fit pl-10 || sm:pl-0">
+          <img class="w-6 drop-shadow-2xl || sm:w-10" src="svg/clock.svg" />
+          <div class="flex flex-col uppercase font-bold text-white">
+            <p class="text-lg drop-shadow-2xl || sm:text-xl || lg:text-2xl">36</p>
+            <p class="text-xs drop-shadow-2xl || sm:text-xs || lg:text-sm">Horas de Treino</p>
           </div>
         </div>
         <div class="flex items-center w-fit">
-          <img class="w-10 drop-shadow-2xl" src="svg/clock.svg" />
+          <img class="w-6 drop-shadow-2xl || sm:w-10" src="svg/car.svg" />
           <div class="flex flex-col uppercase font-bold text-white">
-            <p class="text-xl drop-shadow-2xl || lg:text-2xl">36</p>
-            <p class="text-xs drop-shadow-2xl || lg:text-sm">Horas de Treino</p>
+            <p class="text-lg drop-shadow-2xl || sm:text-xl || lg:text-2xl">+50</p>
+            <p class="text-xs drop-shadow-2xl || sm:text-xs || lg:text-sm">Anos de Trabalho</p>
           </div>
         </div>
-        <div class="flex items-center w-fit">
-          <img class="w-10 drop-shadow-2xl" src="svg/car.svg" />
+        <div class="flex items-center w-fit pr-8 || sm:pr-0">
+          <img class="w-6 drop-shadow-2xl || sm:w-10" src="svg/id.svg" />
           <div class="flex flex-col uppercase font-bold text-white">
-            <p class="text-xl drop-shadow-2xl || lg:text-2xl">+50</p>
-            <p class="text-xs drop-shadow-2xl || lg:text-sm">Anos de Trabalho</p>
-          </div>
-        </div>
-        <div class="flex items-center w-fit">
-          <img class="w-10 drop-shadow-2xl" src="svg/id.svg" />
-          <div class="flex flex-col uppercase font-bold text-white">
-            <p class="text-xl drop-shadow-2xl || lg:text-2xl">+10.000</p>
-            <p class="text-xs drop-shadow-2xl || lg:text-sm">Aprovados</p>
+            <p class="text-lg drop-shadow-2xl || sm:text-xl || lg:text-2xl">+10.000</p>
+            <p class="text-xs drop-shadow-2xl || sm:text-xs || lg:text-sm">Aprovados</p>
           </div>
         </div>
       </section>
 
       <!-- PROGRAMA -->
-      <section id="programa" class="bg-[#f2f2f2] flex flex-col uppercase font-bold p-2.5 gap-3 justify-around || lg:h-screen lg:justify-center lg:gap-20">
-        <h2 class="drop-shadow-2xl text-2xl m-2.5 ||  xl:text-3xl">P r o g r a m a</h2>
-        <div class="flex gap-2 justify-center items-center || lg:flex-col || xl:gap-5">
+      <section id="programa" class="bg-[#f2f2f2] flex flex-col uppercase font-bold p-2.5 pb-5 gap-3 justify-around || lg:h-screen lg:justify-center lg:gap-20">
+        <h2 class="drop-shadow-2xl text-2xl m-2.5 || xl:text-3xl">P r o g r a m a</h2>
+        <div class="flex flex-wrap gap-2 justify-center items-center || lg:flex-col || xl:gap-5">
           <div class="flex flex-col gap-2 || lg:flex-row || xl:gap-5">
             <div class="flex flex-col items-center bg-[#d9d9d9] gap-3 p-3 rounded w-60 h-36 justify-around || lg:w-80 lg:h-48">
               <div class="flex flex-col items-center">
@@ -170,7 +166,6 @@
               <img class="w-14 || lg:w-20" src="svg/driving.svg" />
             </div>
           </div>
-
         </div>
       </section>
 
@@ -218,20 +213,20 @@
       <!-- CONTATO -->
       <section id="contato" class="bg-[#dead00] text-[#252525] flex flex-col p-2.5 font-bold drop-shadow-2xl || lg:flex-row lg:items-center lg:justify-evenly lg:w-full">
         <div class="flex justify-evenly gap-2 || lg:w-7/12">
-          <img class="w-36 || lg:w-20 || xl:w-28" src="svg/logo.svg">
+          <img class="w-20 || sm:w-36 || lg:w-20 || xl:w-28" src="svg/logo.svg">
           <div class="flex flex-col || lg:flex-row lg:items-center lg:gap-5">
-            <div class="text-lg || xl:text-2xl">
-              <span class="flex gap-1">Dúvidas? <img class="w-7" src="svg/support.svg"></span>
+            <div class="text-sm || sm:text-lg || xl:text-2xl">
+              <span class="flex gap-1">Dúvidas? <img class="w-5 ||sm:w-7" src="svg/support.svg"></span>
               <span>Fale Conosco!</span>
             </div>
-            <div class="flex flex-col gap-1 text-base || xl:text-xl">
-              <span class="flex gap-1"><img class="w-5" src="svg/whatsapp.svg">21 97151-5281</span>
-              <span class="flex gap-1"><img class="w-4" src="svg/phone-solid.svg">21 2772-4214</span>
-              <span class="flex gap-1"><img class="w-4" src="svg/email.svg">autoescolavsa@gmail.com</span>
+            <div class="flex flex-col gap-1 text-xs || sm:text-base || xl:text-xl">
+              <span class="flex gap-1"><img class="w-3 || sm:w-5" src="svg/whatsapp.svg">21 97151-5281</span>
+              <span class="flex gap-1"><img class="w-3 || sm:w-5" src="svg/phone-solid.svg">21 2772-4214</span>
+              <span class="flex gap-1"><img class="w-3 || sm:w-5" src="svg/email.svg">autoescolavsa@gmail.com</span>
             </div>
           </div>
         </div>
-        <span class="text-base text-center || lg:w-5/12 || xl:text-xl">Atendimento: (De segunda à sexta-feira das 08h00 às 19h00 <br> sábados das 08h00 às 17h00)</span>
+        <span class="text-center text-xs || sm:text-base || lg:w-5/12 || xl:text-xl">Atendimento: (De segunda à sexta-feira das 08h00 às 19h00 <br> sábados das 08h00 às 17h00)</span>
       </section>
 
       <!-- FOOTER -->
@@ -241,7 +236,7 @@
 
       <!-- FLOAT BUTTON -->
       <div id="float-button">
-        <a href="#inicio" class="sm:hidden || lg:block fixed w-16 h-16 bottom-28 right-5 rounded-full z-10 drop-shadow-2xl text-center text-[2.625em] text-[#252525] bg-[#dead00] z-10 || xl:bottom-32">
+        <a href="#inicio" class="hidden || lg:block fixed w-16 h-16 bottom-28 right-5 rounded-full z-10 drop-shadow-2xl text-center text-[2.625em] text-[#252525] bg-[#dead00] z-10 || xl:bottom-32">
           <i class="fa-solid fa-arrow-up mt-2"></i>
         </a>
         <a class="fixed w-12 h-12 bottom-5 right-5 rounded-full z-10 drop-shadow-2xl text-center text-[2em] text-white bg-[#25d366] || lg:w-16 lg:h-16 lg:text-[2.625em]" href="https://api.whatsapp.com/send?phone=5521971515281&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es!">
