@@ -17,7 +17,7 @@ Projeto desenvolvido para Vila Santo Antônio com Tailwind e 100% responsivo.
 </p>
 
 <p align="center">
-  <img alt="Projeto" src="assets/desktop.png">
+  <img alt="Projeto" src="css/desktop.png">
 </p>
 
 <br>
