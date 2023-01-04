@@ -41,6 +41,12 @@ A webpage foi desenvolvida para um cliente de forma gratuita com objetivo de apr
 
 <br>
 
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://aevsa.netlify.app).
+
+<br>
+
 ## 📄 Licença
 
 Esse projeto está sob a licença MIT.
