@@ -1,5 +1,5 @@
 
-<h1 align="center"> Website - Autoescola</h1>
+<h1 align="center"> Lading Page - Autoescola</h1>
 
 <p align="center">
 Projeto desenvolvido para Vila Santo Antônio com Tailwind e 100% responsivo.
